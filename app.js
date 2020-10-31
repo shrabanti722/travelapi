@@ -52,7 +52,7 @@ app.use((error, req, res, next) => {
     res.status(status).json({message: message});
 });
 
-const uri = 'mongodb+srv://shrabanti72:kzF6eR1UKsPMV0HI@cluster0.gmbpo.mongodb.net/restful_feed_app?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://<username>:<password>@cluster0.gmbpo.mongodb.net/restful_feed_app?retryWrites=true&w=majority';
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true , useUnifiedTopology: true}
 );
 const connection = mongoose.connection;
